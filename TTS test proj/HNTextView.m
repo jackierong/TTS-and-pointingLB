@@ -7,7 +7,6 @@
 //
 
 #import "HNTextView.h"
-
 #import <UIKit/UILabel.h>
 #import <UIKit/UINibLoading.h>
 
@@ -50,7 +49,7 @@
     }else{
         [placeHolderLabel setAlpha:1];
     }
-    
+    placeHolderLabel.textColor = [UIColor blueColor];
     [self setNeedsLayout];
     [self layoutIfNeeded];
 }
@@ -70,9 +69,8 @@
 
 -(void)layoutSubviews {
     [super layoutSubviews];
-    
     [placeHolderLabel sizeToFit];
-    placeHolderLabel.frame = CGRectMake(M, M, CGRectGetWidth(self.frame)-M*2, CGRectGetHeight(placeHolderLabel.frame));
+    placeHolderLabel.frame = CGRectMake(6, 0, self.frame.size.width, 100);//M, M, CGRectGetWidth(self.frame)-M*2, CGRectGetHeight(placeHolderLabel.frame)
 }
 
 -(void)setPlaceholder:(NSString *)placeholder {
@@ -95,8 +93,7 @@
 }
 
 //When any text changes on textField, the delegate getter is called. At this time we refresh the textView's placeholder
--(id<UITextViewDelegate>)delegate
-{
+-(id<UITextViewDelegate>)delegate {
     [self refreshPlaceholder];
     return [super delegate];
 }

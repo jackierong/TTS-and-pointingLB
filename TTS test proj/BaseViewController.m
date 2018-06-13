@@ -7,6 +7,8 @@
 //
 
 #import "BaseViewController.h"
+#import "TestViewController.h"
+#import "ViewController.h"
 
 @interface BaseViewController ()
 
@@ -16,9 +18,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationItem.title = @"测试测试";
+    self.navigationController.navigationBar.backgroundColor = [UIColor cyanColor];
+    
+    UIButton *arrowLbBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    arrowLbBtn.backgroundColor = [UIColor lightGrayColor];
+    [arrowLbBtn setTitle:@"指向箭头测试" forState:(UIControlStateNormal)];
+    [arrowLbBtn setTitleColor:[UIColor purpleColor] forState:(UIControlStateNormal)];
+    [arrowLbBtn addTarget:self action:@selector(pushToArrowLbtestVC:) forControlEvents:UIControlEventTouchUpInside];
+    arrowLbBtn.frame = CGRectMake(CW/2 - 80, 150, 160, 80);
+    [self.view addSubview:arrowLbBtn];
+    
+    UIButton *TTFBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    TTFBtn.backgroundColor = [UIColor lightGrayColor];
+    [TTFBtn setTitle:@"文字转语音测试" forState:(UIControlStateNormal)];
+    [TTFBtn addTarget:self action:@selector(pushToTTFtestVC:) forControlEvents:UIControlEventTouchUpInside];
+    [TTFBtn setTitleColor:[UIColor yellowColor] forState:(UIControlStateNormal)];
+    TTFBtn.frame = CGRectMake(CW/2 - 80, 270, 160, 80);
+    [self.view addSubview:TTFBtn];
 }
-
+//文字转语音测试跳转
+- (void)pushToTTFtestVC:(UIButton *)sender {
+    [self.navigationController pushViewController:[ViewController new] animated:YES];
+}
+//指向箭头测试跳转
+- (void)pushToArrowLbtestVC:(UIButton *)sender {
+    [self.navigationController pushViewController:[TestViewController new] animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

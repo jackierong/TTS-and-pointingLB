@@ -15,6 +15,11 @@
 		E76E11612093085F0088D8D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E76E11602093085F0088D8D5 /* main.m */; };
 		E76E116B2093085F0088D8D5 /* TTS_test_projTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E76E116A2093085F0088D8D5 /* TTS_test_projTests.m */; };
 		E76E11762093085F0088D8D5 /* TTS_test_projUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E76E11752093085F0088D8D5 /* TTS_test_projUITests.m */; };
+		E76E1185209308F10088D8D5 /* RZsoundplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E76E1184209308F10088D8D5 /* RZsoundplayer.m */; };
+		E784A8D220D10AC400EA21C7 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E784A8D020D10AC400EA21C7 /* TestViewController.m */; };
+		E784A8D320D10AC400EA21C7 /* WBPopOverView.m in Sources */ = {isa = PBXBuildFile; fileRef = E784A8D120D10AC400EA21C7 /* WBPopOverView.m */; };
+		E784A8D620D10D1E00EA21C7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E784A8D520D10D1E00EA21C7 /* BaseViewController.m */; };
+		E784A8D920D111B300EA21C7 /* HNTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E784A8D720D111B200EA21C7 /* HNTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		E76E11712093085F0088D8D5 /* TTS test projUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TTS test projUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76E11752093085F0088D8D5 /* TTS_test_projUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTS_test_projUITests.m; sourceTree = "<group>"; };
 		E76E11772093085F0088D8D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E76E1183209308F10088D8D5 /* RZsoundplayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RZsoundplayer.h; sourceTree = "<group>"; };
+		E76E1184209308F10088D8D5 /* RZsoundplayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RZsoundplayer.m; sourceTree = "<group>"; };
+		E784A8CE20D10AC400EA21C7 /* WBPopOverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPopOverView.h; sourceTree = "<group>"; };
+		E784A8CF20D10AC400EA21C7 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		E784A8D020D10AC400EA21C7 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		E784A8D120D10AC400EA21C7 /* WBPopOverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPopOverView.m; sourceTree = "<group>"; };
+		E784A8D420D10D1E00EA21C7 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		E784A8D520D10D1E00EA21C7 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		E784A8D720D111B200EA21C7 /* HNTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNTextView.m; sourceTree = "<group>"; };
+		E784A8D820D111B200EA21C7 /* HNTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNTextView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +118,18 @@
 			children = (
 				E76E11512093085D0088D8D5 /* AppDelegate.h */,
 				E76E11522093085D0088D8D5 /* AppDelegate.m */,
+				E784A8D420D10D1E00EA21C7 /* BaseViewController.h */,
+				E784A8D520D10D1E00EA21C7 /* BaseViewController.m */,
 				E76E11542093085D0088D8D5 /* ViewController.h */,
 				E76E11552093085D0088D8D5 /* ViewController.m */,
+				E76E1183209308F10088D8D5 /* RZsoundplayer.h */,
+				E76E1184209308F10088D8D5 /* RZsoundplayer.m */,
+				E784A8CF20D10AC400EA21C7 /* TestViewController.h */,
+				E784A8D020D10AC400EA21C7 /* TestViewController.m */,
+				E784A8CE20D10AC400EA21C7 /* WBPopOverView.h */,
+				E784A8D120D10AC400EA21C7 /* WBPopOverView.m */,
+				E784A8D820D111B200EA21C7 /* HNTextView.h */,
+				E784A8D720D111B200EA21C7 /* HNTextView.m */,
 				E76E11572093085D0088D8D5 /* Main.storyboard */,
 				E76E115A2093085F0088D8D5 /* Assets.xcassets */,
 				E76E115C2093085F0088D8D5 /* LaunchScreen.storyboard */,
@@ -262,9 +287,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76E1185209308F10088D8D5 /* RZsoundplayer.m in Sources */,
 				E76E11562093085D0088D8D5 /* ViewController.m in Sources */,
 				E76E11612093085F0088D8D5 /* main.m in Sources */,
 				E76E11532093085D0088D8D5 /* AppDelegate.m in Sources */,
+				E784A8D220D10AC400EA21C7 /* TestViewController.m in Sources */,
+				E784A8D920D111B300EA21C7 /* HNTextView.m in Sources */,
+				E784A8D620D10D1E00EA21C7 /* BaseViewController.m in Sources */,
+				E784A8D320D10AC400EA21C7 /* WBPopOverView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -422,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -434,8 +464,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G5H6L387MT;
+				DEVELOPMENT_TEAM = SB9AQ5G8Y3;
 				INFOPLIST_FILE = "TTS test proj/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,8 +482,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G5H6L387MT;
+				DEVELOPMENT_TEAM = SB9AQ5G8Y3;
 				INFOPLIST_FILE = "TTS test proj/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

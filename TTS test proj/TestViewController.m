@@ -5,10 +5,8 @@
 //  Created by Rong on 2017/8/25.
 //  Copyright © 2017年 Rong. All rights reserved.
 //
-
 #import "TestViewController.h"
 #import "WBPopOverView.h"
-#import "IWCommon.h"
 
 @interface TestViewController ()
 
@@ -22,7 +20,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationController.title = @"测试";
+    self.navigationItem.title = @"指向性label测试";
     self.navigationController.navigationBar.backgroundColor = [UIColor cyanColor];
     
     self.xzLb = [[UILabel alloc] initWithFrame:CGRectMake(0, CH * 2 / 9 + 20, CW / 2, CH / 9)];
@@ -39,16 +37,16 @@
     [self.view addSubview:self.sxLb];
     
     CGPoint point=CGPointMake(self.xzLb.frame.origin.x+self.xzLb.frame.size.width/2, self.xzLb.frame.origin.y+self.xzLb.frame.size.height);//箭头点的位置
-    WBPopOverView *view=[[WBPopOverView alloc]initWithOrigin:point Width:160 Height:100 Direction:WBArrowDirectionUp1 color:[UIColor colorWithWhite:0.2 alpha:1]];//初始化弹出视图的箭头顶点位置point，展示视图的宽度Width，高度Height，Direction以及展示的方向
+    WBPopOverView *view=[[WBPopOverView alloc]initWithSuperView:self.view Origin:point Width:160 Height:100 Direction:WBArrowDirectionUp1 color:[UIColor colorWithWhite:0.2 alpha:1]];//初始化弹出视图的箭头顶点位置point，展示视图的宽度Width，高度Height，Direction以及展示的方向
     UILabel *lable=[[UILabel alloc]initWithFrame:CGRectMake(10, 10, 160, 100)];
     lable.text=@"这里显示星座";
     lable.textColor=[UIColor whiteColor];
     [view.backView addSubview:lable];
     [self.view addSubview:view];
-    CGPoint point1=CGPointMake(self.xzLb.frame.origin.x+self.xzLb.frame.size.width/2, self.xzLb.frame.origin.y);//箭头点的位置
-    WBPopOverView *view1=[[WBPopOverView alloc]initWithOrigin:point1 Width:160 Height:100 Direction:WBArrowDirectionDown3 color:[UIColor purpleColor]];//初始化弹出视图的箭头顶点位置point，展示视图的宽度Width，高度Height，Direction以及展示的方向
+    CGPoint point1=CGPointMake(self.sxLb.frame.origin.x+self.sxLb.frame.size.width/2, self.sxLb.frame.origin.y);//箭头点的位置
+    WBPopOverView *view1=[[WBPopOverView alloc]initWithSuperView:self.view Origin:point1 Width:160 Height:100 Direction:WBArrowDirectionDown1 color:[UIColor purpleColor]];//初始化弹出视图的箭头顶点位置point，展示视图的宽度Width，高度Height，Direction以及展示的方向
     UILabel *lable1=[[UILabel alloc]initWithFrame:CGRectMake(10, 10, 160, 100)];
-    lable1.text=@"这里显示星座";
+    lable1.text=@"这里显示生肖";
     lable1.textColor=[UIColor whiteColor];
     [view1.backView addSubview:lable1];
     [self.view addSubview:view1];

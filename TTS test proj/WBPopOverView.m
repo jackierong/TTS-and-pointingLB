@@ -25,7 +25,7 @@
 
 @implementation WBPopOverView
 
--(instancetype)initWithOrigin:(CGPoint)origin Width:(CGFloat)width Height:(float)height Direction:(WBArrowDirection)direction color:(UIColor *)color {
+- (instancetype)initWithSuperView:(UIView *)superView Origin:(CGPoint)origin Width:(CGFloat)width Height:(float)height Direction:(WBArrowDirection)direction color:(UIColor *)color {
     if (self = [super initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)]) {
         //背景颜色为无色
         self.backgroundColor=[UIColor clearColor];
@@ -40,7 +40,7 @@
         self.backView.backgroundColor = color;
         UITapGestureRecognizer *hidden = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hiddenView:)];
         [self.backView addGestureRecognizer:hidden];
-        [[UIApplication sharedApplication].keyWindow addSubview:self.backView];
+        [superView addSubview:self.backView];
    
     }
     return self;

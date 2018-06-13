@@ -33,6 +33,6 @@ typedef NS_ENUM(NSUInteger,WBArrowDirection){
  width:宽度
  height:高度
  */
-- (instancetype)initWithOrigin:(CGPoint)origin Width:(CGFloat)width Height:(float)height Direction:(WBArrowDirection)direction color:(UIColor *)color;//初始化
+- (instancetype)initWithSuperView:(UIView *)superView Origin:(CGPoint)origin Width:(CGFloat)width Height:(float)height Direction:(WBArrowDirection)direction color:(UIColor *)color;//初始化
 
 @end
